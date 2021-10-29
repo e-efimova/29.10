@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body class="bg-light py-3 py-lg-5">
+    <div class="container">
+      <div class="text-center">
+          <h1 class="display-4">COOL SURVEY</h1>
+          <p class="lead">Some kind of really cool poll... Pass it! Please...</p>
+      </div>
+
+      <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Step 1</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Step 2</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Step 3</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade pt-4 show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label class="form-label">Sex:</label>
+              <div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="sex" id="sex-male" value="male">
+                  <label class="form-check-label" for="sex-male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" class="form-check-input" name="sex" id="sex-female" value="female">
+                  <label class="form-check-label" for="sex-female">Female</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label class="form-label">Age:</label>
+              <input type="text" class="form-control" aria-describedby="age">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Phone:</label>
+              <input type="text" class="form-control" aria-describedby="phone">
+            </div>
+          </div> 
+          
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Name:</label>
+              <input type="text" class="form-control" aria-describedby="name" placeholder="Firstname Lastname">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Email:</label>
+              <input type="email" class="form-control" aria-describedby="email" placeholder="username@domain.com">
+            </div>
+          </div>
+
+          <div class="row">
+           <div class="col-md-9 mb-3">
+              <label class="form-label">Address:</label>
+              <input type="text" class="form-control" aria-describedby="address" placeholder="123 Street Name">
+            </div>
+            <div class="col-md-3 mb-3">
+              <label class="form-label">Apartment or floor:</label>
+              <input type="text" class="form-control" aria-describedby="floor" placeholder="B3, 4th Floor, or similar">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">City:</label>
+              <input type="text" class="form-control" aria-describedby="city" placeholder="City">
+            </div>
+            <div class="col-md-2 mb-3">
+              <label class="form-label">Zip:</label>
+              <input type="text" class="form-control" aria-describedby="zip" placeholder="123">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label class="form-label">Country:</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>- Select Country -</option>
+                <option value="1">Russian Federation</option>
+                <option value="2">Ukraine</option>
+                <option value="3">Armenia</option>
+              </select>
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-secondary d-block ms-auto" id="go-to-step-2">Step 2</button>
+        </div>
+
+        <div class="tab-pane fade pt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <h2 class="h5 text-center mb-3">Question #1: What is depicted in the picture?</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img src="img/2.jpg" class="figure-img img-fluid rounded">
+                <figcaption class="fugure-caption text-secondary">There should be a signature here, but I do not know what to write :\</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-1" value="option1">
+                  <label class="form-check-label" for="radioButtonsQuestion1-1">Are you serious?...</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-1" value="option1">
+                  <label class="form-check-label" for="radioButtonsQuestion1-1">It's the cats-rangers!</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-1" value="option1">
+                  <label class="form-check-label" for="radioButtonsQuestion1-1">Rainbow</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-1" value="option1">
+                  <label class="form-check-label" for="radioButtonsQuestion1-1">?bebra?</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-1" value="option1">
+                <input type="text" class="form-control" aria-describedby="floor" placeholder="Other">
+                <figcaption class="fugure-caption text-secondary">If none of the answers fit - write your own!</figcaption>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <h2 class="h5 text-center mb-3">Question #2: Determine from the picture what holiday is coming soon?</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img src="img/3.jpg" class="figure-img img-fluid rounded">
+                <figcaption class="fugure-caption text-secondary">There should be a signature here, but I do not know what to write :\</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-2" value="option1">
+                  <label class="form-check-label" for="radioButtonsQuestion2-2">Pumpkin Day</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-2" value="option1">
+                  <label class="form-check-label" for="radioButtonsQuestion2-2">Squirrel Day</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-2" value="option1">
+                  <label class="form-check-label" for="radioButtonsQuestion2-2">Helloween</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-2" value="option1">
+                  <label class="form-check-label" for="radioButtonsQuestion2-2">Squirrel Day in Pumpkin</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-2" value="option1">
+                <input type="text" class="form-control" aria-describedby="floor" placeholder="Other">
+                <figcaption class="fugure-caption text-secondary">If none of the answers fit - write your own!</figcaption>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <h2 class="h5 text-center mb-3">Question #3: What do you feel looking at this picture?</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img src="img/4.jpg" class="figure-img img-fluid rounded">
+                <figcaption class="fugure-caption text-secondary">There should be a signature here, but I do not know what to write :\</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion3" id="radioButtonsQuestion3-3" value="option1">
+                  <label class="form-check-label" for="radioButtonsQuestion3-3">OMG...I'm not going to answer that!</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion3" id="radioButtonsQuestion3-3" value="option2">
+                  <label class="form-check-label" for="radioButtonsQuestion3-3">Complete peace of mind</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion3" id="radioButtonsQuestion3-3" value="option3">
+                  <label class="form-check-label" for="radioButtonsQuestion3-3">I feel a kindred spirit in him</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion3" id="radioButtonsQuestion3-3" value="option4">
+                  <label class="form-check-label" for="radioButtonsQuestion3-3">...monkey...</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion3" id="radioButtonsQuestion3-3" value="option5">
+                <input type="text" class="form-control" aria-describedby="floor" placeholder="Other">
+                <figcaption class="fugure-caption text-secondary">If none of the answers fit - write your own!</figcaption>
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+          <h2 class="h5 text-center mb-3">Question #4: Did you like the survey?</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <figure class="figure">
+                <img src="img/1.jpg" class="figure-img img-fluid rounded">
+                <figcaption class="fugure-caption text-secondary">There should be a signature here, but I do not know what to write :\</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion4" id="radioButtonsQuestion4-4" value="option1">
+                  <label class="form-check-label" for="radioButtonsQuestion4-4">The survey is awesome! I laughed</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion4" id="radioButtonsQuestion4-4" value="option2">
+                  <label class="form-check-label" for="radioButtonsQuestion4-4">I love cats, so I liked the survey</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion4" id="radioButtonsQuestion4-4" value="option3">
+                  <label class="form-check-label" for="radioButtonsQuestion4-4">This cat and I are similar -_-</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion4" id="radioButtonsQuestion4-4" value="option4">
+                  <label class="form-check-label" for="radioButtonsQuestion4-4">I love hot bebra</label>
+              </div>
+              <div class="form-check mb-1">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion4" id="radioButtonsQuestion4-4" value="option5">
+                <input type="text" class="form-control" aria-describedby="floor" placeholder="Other">
+                <figcaption class="fugure-caption text-secondary">If none of the answers fit - write your own!</figcaption>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-secondary d-block ms-auto" id="go-to-step-3">Step 3</button>
+        </div>
+
+        <div class="tab-pane fade pt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5 mb-3">Question #5: Do you like memes about animals?</h2>
+              <p>Evaluate according to: 1 - I am insensitive, because how can you not love animals?! 2 - no 3 - bebra, 4 - yes, 5 - I love it!</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="d-flex justify-content-between mb-3">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion5" id="radioButtonsQuestion5-5" value="option1">
+                  <label class="form-check-label" for="radioButtonsQuestion5-5">1</label>
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion5" id="radioButtonsQuestion5-5" value="option2">
+                  <label class="form-check-label" for="radioButtonsQuestion5-5">2</label>
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion5" id="radioButtonsQuestion5-5" value="option3">
+                  <label class="form-check-label" for="radioButtonsQuestion5-5">3</label>
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion5" id="radioButtonsQuestion5-5" value="option4">
+                  <label class="form-check-label" for="radioButtonsQuestion5-5">4</label>
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion5" id="radioButtonsQuestion5-5" value="option5">
+                  <label class="form-check-label" for="radioButtonsQuestion5-5">5</label>
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion5" id="radioButtonsQuestion5-6" value="option6">
+                  <label class="form-check-label" for="radioButtonsQuestion5-6">n/a</label>
+              </div>
+              <label class="visually-hidden" for="ratingRadioQuestion5-comment">Comment:</label>
+              <textarea class="form-control form-control-sm" id="ratingRadioQuestion5-comment" name="ratingRadioQuestion5" rows="3" placeholder="Write a comment here..."></textarea>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5 mb-3">Question #6: How often do you watch memes?</h2>
+              <p>Evaluate according to: 1 - I don't look, 2 - rarely, 3 - bebra, 4 - often, 5 - I'm a GHOUL!</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="d-flex justify-content-between mb-3">
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion6" id="radioButtonsQuestion6-1" value="option1">
+                  <label class="form-check-label" for="radioButtonsQuestion6-1">1</label>
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion6" id="radioButtonsQuestion6-2" value="option2">
+                  <label class="form-check-label" for="radioButtonsQuestion6-2">2</label>
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion6" id="radioButtonsQuestion6-3" value="option3">
+                  <label class="form-check-label" for="radioButtonsQuestion6-3">3</label>
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion6" id="radioButtonsQuestion6-4" value="option4">
+                  <label class="form-check-label" for="radioButtonsQuestion6-4">4</label>
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion6" id="radioButtonsQuestion6-5" value="option5">
+                  <label class="form-check-label" for="radioButtonsQuestion6-5">5</label>
+                <input class="form-check-input" type="radio" name="radioButtonsQuestion6" id="radioButtonsQuestion6-6" value="option6">
+                  <label class="form-check-label" for="radioButtonsQuestion6-6">n/a</label>
+              </div>
+              <label class="visually-hidden" for="ratingRadioQuestion6-comment">Comment:</label>
+              <textarea class="form-control form-control-sm" id="ratingRadioQuestion6-comment" name="ratingRadioQuestion6" rows="3" placeholder="Write a comment here..."></textarea>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5 mb-3">Question #7: Do you like petting kittens?</h2>
+              <p>Evaluate according to: 1 - I hate kittens, 2 - can stroke, 3 - kittens..., 4 - adore, 5 - I have 100+ cats))))</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <div class="btn-group btn-group-lg w-100">
+                  <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7" id="ratingToggleButtonsQuestion7-1" value="rating-1" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-1">1</label> 
+                  <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7" id="ratingToggleButtonsQuestion7-2" value="rating-2" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-2">2</label> 
+                  <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7" id="ratingToggleButtonsQuestion7-3" value="rating-3" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-3">3</label> 
+                  <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7" id="ratingToggleButtonsQuestion7-4" value="rating-4" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-4">4</label> 
+                  <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7" id="ratingToggleButtonsQuestion7-5" value="rating-5" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-5">5</label> 
+                  <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7" id="ratingToggleButtonsQuestion7-6" value="rating-6" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-6">n/a</label> 
+                </div>
+              </div>
+              <label class="visually-hidden" for="ratingRadioQuestion7-comment">Comment:</label>
+              <textarea class="form-control form-control-sm" id="ratingRadioQuestion7-comment" name="ratingRadioQuestion7" rows="3" placeholder="Write a comment here..."></textarea>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5 mb-3">Question #8: Do you like stroking people? >://</h2>
+              <p>Evaluate according to: 1 - are you normal?, 2 - is it strange..., 3 - if I just accidentally touch, 4 - sometimes, 5 - I'm a pervert))))</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <div class="btn-group btn-group-lg w-100">
+                  <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8" id="ratingToggleButtonsQuestion8-1" value="rating-1" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-1">1</label> 
+                  <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8" id="ratingToggleButtonsQuestion8-2" value="rating-2" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-2">2</label> 
+                  <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8" id="ratingToggleButtonsQuestion8-3" value="rating-3" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-3">3</label> 
+                  <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8" id="ratingToggleButtonsQuestion8-4" value="rating-4" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-4">4</label> 
+                  <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8" id="ratingToggleButtonsQuestion8-5" value="rating-5" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-5">5</label> 
+                  <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8" id="ratingToggleButtonsQuestion8-6" value="rating-6" autocomplete="off">
+                  <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-6">n/a</label> 
+                </div>
+              </div>
+              <label class="visually-hidden" for="ratingRadioQuestion8-comment">Comment:</label>
+              <textarea class="form-control form-control-sm" id="ratingRadioQuestion8-comment" name="ratingRadioQuestion8" rows="3" placeholder="Write a comment here..."></textarea>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5 mb-3">Question #9: How would you rate the minecraft game?</h2>
+              <p>Evaluate according to: Well, everything is clear here. But if you don't like minecraft, then leave a comment with the game you like!</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="d-flex justify-content-between mb-3">
+                <span class="me-3">1</span>
+                <label for="ratingRangeQuestion9" class="form-range visually-hidden">Range nput label:</label>
+                <input type="range" class="form-range" id="ratingRangeQuestion9" name="ratingRangeQuestion9" min="1" max="5">
+                <span class="ms-3">5</span>
+              </div>
+              <label class="visually-hidden" for="ratingRadioQuestion9-comment">Comment:</label>
+              <textarea class="form-control form-control-sm" id="ratingRadioQuestion9-comment" name="ratingRadioQuestion9" rows="3" placeholder="Write a comment here..."></textarea>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="h5 mb-3">Question #10: Do you love your mom?</h2>
+              <p>Evaluate according to: Only idiots put below 5! Appreciate the mother.</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="d-flex justify-content-between mb-3">
+                <span class="me-3">1</span>
+                <label for="ratingRangeQuestion9" class="form-range visually-hidden">Range nput label:</label>
+                <input type="range" class="form-range" id="ratingRangeQuestion9" name="ratingRangeQuestion9" min="1" max="5">
+                <span class="ms-3">5</span>
+              </div>
+              <label class="visually-hidden" for="ratingRadioQuestion10-comment">Comment:</label>
+              <textarea class="form-control form-control-sm" id="ratingRadioQuestion10-comment" name="ratingRadioQuestion10" rows="3" placeholder="Write a comment here..."></textarea>
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-secondary d-block ms-auto my-4" id="go-to-step-2"><a href="results.html" class="text-decoration-none">Submit</a></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
